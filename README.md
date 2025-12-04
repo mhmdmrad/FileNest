@@ -19,7 +19,19 @@ Run the script:
 You will be asked to enter a folder path.
 
 ## Entering Paths on Windows
-Windows paths need special formatting. Use one of these:
+
+Windows paths contain backslashes ( \ ).  
+Python interprets many backslash sequences as escape characters, such as:
+
+\u  \n  \t  \r
+
+Because of this, writing a normal Windows path like:
+
+"C:\Users\User\Desktop\folder"
+
+will not work correctly.
+
+To avoid this problem, use one of the following formats:
 
 Raw string:  
 r"C:\Users\User\Desktop\folder"
@@ -30,7 +42,7 @@ C:\\Users\\User\\Desktop\\folder
 Forward slashes:  
 C:/Users/User/Desktop/folder
 
-Terminal input (quotes not required):  
+Terminal input without quotes:  
 C:\Users\User\Desktop\folder
 
 ## Requirements
