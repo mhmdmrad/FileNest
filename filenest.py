@@ -11,14 +11,15 @@ def organize_files(bp):
 
         if os.path.isfile(ip):
             fn = os.path.splitext(item)[0]
-            fp_new = os.path.join(bp, fn)
+            fpnew = os.path.join(bp, fn)
 
             if not os.path.exists(fp_new):
-                os.mkdir(fp_new)
-            shutil.move(ip, os.path.join(fp_new, item))
+                os.mkdir(fpnew)
+            shutil.move(ip, os.path.join(fpnew, item))
             print(f"Moved '{item}' into '{fn}/'")
 
-    print("Done organizing")
+    print("done organizing")
 
 fp= input("Enter the folder path: ")
 organize_files(fp)
+
