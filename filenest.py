@@ -19,7 +19,7 @@ def organize_files(bp):
             print(f"Moved '{item}' into '{fn}/'")
 
     print("done organizing")
-
 fp= input("Enter the folder path: ")
 organize_files(fp)
+
 
