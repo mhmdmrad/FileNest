@@ -1,5 +1,4 @@
 # FileNest 
-
 FileNest is a Python utility that organizes any folder by placing each file into a folder with the same name (without extension).  
 This creates a clean and structured directory layout.
 
